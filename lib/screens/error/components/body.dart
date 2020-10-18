@@ -57,7 +57,7 @@ class _BodyState extends State<Body> {
                         right: 0,
                         bottom: 0,
                         child: SvgPicture.asset("assets/icons/line.svg"),
-                      )
+                      ),
                     ],
                   ),
                 )
