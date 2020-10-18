@@ -36,27 +36,40 @@ class _BodyState extends State<Body> {
                       ),
                       // Cycle
                       Positioned(
-                        bottom: 6,
-                        right: 147,
-                        child: SvgPicture.asset(
-                          "assets/icons/cycle_part_2.svg",
-                          height: 142,
-                          width: 142,
-                        ),
-                      ),
-                      Positioned(
                         bottom: 0,
-                        left: 120,
-                        child: SvgPicture.asset(
-                          "assets/icons/cycle_part_1.svg",
-                          height: 287,
+                        left: 130,
+                        child: SizedBox(
+                          height: 310,
+                          width: 528,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                bottom: 7,
+                                left: 230,
+                                child: SvgPicture.asset(
+                                  "assets/icons/cycle_part_2.svg",
+                                  height: 142,
+                                  width: 142,
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                // left: 120,
+                                child: SvgPicture.asset(
+                                  "assets/icons/cycle_part_1.svg",
+                                  height: 287,
+                                ),
+                              ),
+                              // Bottom Line
+                              Positioned(
+                                left: 0,
+                                bottom: 0,
+                                child:
+                                    SvgPicture.asset("assets/icons/line.svg"),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      // Bottom Line
-                      Positioned(
-                        right: 0,
-                        bottom: 0,
-                        child: SvgPicture.asset("assets/icons/line.svg"),
                       ),
                     ],
                   ),
